@@ -90,8 +90,69 @@
         <input id="gender-f" type="radio" name="gender-f"><label for="gender-f">Femenino</label>
         <input id="gender-o" type="radio" name="gender-o"><label for="gender-o">Otro</label>
         <br>
+        <textarea name="description" id="description" cols="50" rows="10"></textarea>
+        <br>
+        <label for="experience">Años de experiencia</label>
+        <select id="experience" name="experience">
+            <option value="0">Menos de un año</option>
+            <option value="3">De 1 a 3 años</option>
+            <option value="5">De 4 a 5 años</option>
+            <option value="10">De 6 a 10 años</option>
+        </select>
+        <br>
         <input type="submit" value="Guardar">
     </form>
+    <hr>
+    <!-- Tablas -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Erick</td>
+                <td>Agrazal</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Ortega</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Quiróz</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Vicente</td>
+                <td>Urriola</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Milla</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Elementos audiovisuales -->
+    <video controls>
+        <source src="videos/example.mp4" type="video/mp4">
+        <source src="videos/example.ogg" type="video/ogg">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <audio controls>
+        <source src="audios/example.ogg" type="audio/ogg">
+        <source src="audios/example.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    <hr>
 </body>
 
 </html>
