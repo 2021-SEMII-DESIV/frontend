@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario de estudiantes</title>
+</head>
+
+<body>
+    <section>
+        <!-- Header -->
+        <h1>Listado de estudiantes</h1>
+    </section>
+    <section>
+        <!-- Main content -->
+        <form id="save_form">
+            <label for="first_name">Nombre:</label>
+            <input id="first_name" name="first_name" type="text">
+            <label for="last_name">Apellido:</label>
+            <input id="last_name" name="last_name" type="text">
+            <label for="age">Edad</label>
+            <input id="age" name="age" type="number">
+            <hr>
+            <input type="submit" value="Guardar">
+        </form>
+    </section>
+    <script>
+        const form = document.getElementById("save_form");
+        const handler = function (event) {
+            event.preventDefault();
+            const firsName = document.getElementById("first_name");
+            const lastName = document.getElementById("last_name");
+            const age = document.getElementById("age");
+            console.log(firsName.value, lastName.value, age.value);
+        };
+        form.addEventListener("submit", handler);
+    </script>
+</body>
+
+</html>
