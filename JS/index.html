@@ -25,8 +25,22 @@
             <hr>
             <input type="submit" value="Guardar">
         </form>
+        <hr>
+        <form id="alert_form">
+            <h1>Ejemplo de alert</h1>
+            <button>Ejemplo de alert 1</button>
+            <button>Ejemplo de alert 2</button>
+            <button>Ejemplo de alert 3</button>
+        </form>
+        <hr>
+        <form>
+            <h1>Cambio de valor del botón por input</h1>
+            <input type="text" id="change_input_txt">
+            <button id="change_input_btn" type="button">¡Cambiar!</button>
+        </form>
     </section>
     <script>
+        // Save form handlers
         const form = document.getElementById("save_form");
         const handler = function (event) {
             event.preventDefault();
@@ -36,6 +50,25 @@
             console.log(firsName.value, lastName.value, age.value);
         };
         form.addEventListener("submit", handler);
+    </script>
+    <script>
+        // Alert form handlers
+        const alertForm = document.querySelector("#alert_form");
+        const alertHandler = function (event) {
+            event.preventDefault();
+            console.log("Alert handler clicked.");
+        }
+        alertForm.addEventListener("submit", alertHandler);
+    </script>
+    <script>
+        // Change button text from input
+        const changeInputBtn = document.querySelector("#change_input_btn");
+        const changeInputTxt = document.querySelector("#change_input_txt");
+        const changeInputHandler = function (event) {
+            // changeInputBtn.textContent = changeInputTxt.value;
+            changeInputBtn.innerHTML = `<h1 style='color:red;'>${changeInputTxt.value}</h1>`;
+        }
+        changeInputBtn.addEventListener("click", changeInputHandler);
     </script>
 </body>
 
