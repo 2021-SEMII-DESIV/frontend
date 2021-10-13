@@ -9,13 +9,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:wght@100;400;700&display=swap');
 
+        /* Ejemplo de comentario */
         body {
-            background-color: #ECEBF3;
+            background-color: #F3FCF0;
             font-family: 'Montserrat', sans-serif;
         }
 
         form {
-            border: 2px solid black;
+            padding: 4rem;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            background-color: #FFF;
+            width: 40%;
         }
 
         h1,
@@ -28,6 +32,15 @@
             font-weight: 400;
             font-style: italic;
         }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        .margin-top-3 {
+            margin-top: 3rem;
+        }
     </style>
 </head>
 
@@ -35,12 +48,18 @@
     <form action="">
         <h1>Formulario de estudiantes</h1>
         <h2>Captura de datos de estudiantes</h2>
-        <label for="">Nombre</label>
-        <input type="text">
-        <label for="">Edad</label>
-        <input type="text">
-        <label for="">Descripción</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="margin-top-3">
+            <label for="">Nombre:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Edad:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Descripción:</label>
+            <input type="text">
+        </div>
     </form>
 </body>
 
