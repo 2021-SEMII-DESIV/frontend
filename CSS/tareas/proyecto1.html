@@ -18,6 +18,14 @@
             padding: 30px;
             font-family: 'Montserrat', sans-serif;
         }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         h1 {
             margin-bottom: 15px;
             font-weight: 400;
@@ -31,6 +39,7 @@
         .card {
             background-color: white;
             padding: 20px;
+            width: 50vw;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 5px;
         }
@@ -46,15 +55,21 @@
             color: white;
             font-weight: 600;
             font-size: 10pt;
-        } 
+        }
     </style>
 </head>
 <body>
-    <h1>Erick Agrazal</h1>
-    <section class="card">
-        <h2>¿Tienes alguna duda?</h2>
-        <p>Proporcioname tus datos en el formulario de abajo, y ¡Te aseguro una respuesta súper pronta!</p>
-        <button>¡Enviar!</button>
-    </section>
+    <main class="container">
+        <div class="row">
+            <section class="navbar">
+                <h1>Erick Agrazal</h1>
+            </section>
+            <section class="card">
+                <h2>¿Tienes alguna duda?</h2>
+                <p>Proporcioname tus datos en el formulario de abajo, y ¡Te aseguro una respuesta súper pronta!</p>
+                <button>¡Enviar!</button>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
