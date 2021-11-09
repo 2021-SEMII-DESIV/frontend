@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>poke-move</h1>
+        </section>
+        <section class="container">
+            <form id="pk-form" class="card m-30" action="">
+                <h2>Búsqueda de movimientos y habilidades de Pokemon</h2>
+                <p>Introduzca el id el pokemon al que le desea buscar sus movimientos y sus habilidades.</p>
+                <div class="form-group">
+                    <label for="pkid">Pokemon id:</label>
+                    <input id="pkid" name="pkid" type="text">
+                </div>
+                <div>
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <section id="pk-response-container" class="container hidden">
+            <div class="card">
+                <div class="card-header">
+                    <h2 id="pkname"></h2>
+                    <img id="pkimg" width="60" src="" alt="Pokemon image">
+                </div>
+                <p id="pkweight"></p>
+                <p id="pkheight"></p>
+                <div class="pk-group">
+                    <div id="pkabilities" class="mr-30"></div>
+                    <div id="pkmoves"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
